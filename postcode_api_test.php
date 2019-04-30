@@ -4,7 +4,7 @@
 function lookuppostcode($postcode)
 {
     $postcode = str_replace(" ", "", $postcode);
-    $key = 'r4rv2lG-10WAXtPACGr-Ew18700';
+    $key = 'YOUR API CODE';
     $request = 'https://api.getAddress.io/v2/uk/' . $postcode . '?api-key=' . $key;
     $response = file_get_contents($request);
     $jsonresponse = json_decode($response, true);
